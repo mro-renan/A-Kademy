@@ -5,15 +5,14 @@ This is a **personal project**, developed from **zero** to **practice my skills 
 ### Technologies used
 
 - **HTML5** - Page structuring and semantics
-- CSS3** - Styling, with emphasis on Flexbox, responsive layouts and design from scratch
-- JavaScript - Basic functionalities for simple interactions
+- **CSS3** - Styling, with emphasis on Flexbox, responsive layouts and design from scratch
+- **JavaScript** - Basic functionalities for simple interactions
 
 ### Objectives
 
 - To practice creating layouts without resorting to frameworks or external libraries
 - Learn and apply modern CSS techniques (such as Flexbox and Grid)
 - Create a fully responsive page, adapted for mobile devices
-
 - Implement basic interactions with **JavaScript** to improve the user experience
 
 ### Status
