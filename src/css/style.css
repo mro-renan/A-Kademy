@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap");
+
+:root {
+  --veryDarkGray: #111111;
+  --darkGray: #212121;
+  --semiDarkGray: #bdbdbd;
+  --pastelDarkGray: #d0d0d0;
+  --grayColor: #e0e0e0;
+  --semiGray: #eeeeee;
+  --pastelGray: #f5f5f5;
+  --semiWhite: #fafafa;
+  --darkYellow: #fdd835;
+  --primaryYellow: #fddb36;
+  --lightYellow: #fff176;
+}
+
+body {
+  font-family: "Nunito", Arial;
+  font-size: 1rem;
+  background-color: var(--pastelGray);
+  width: 100vw;
+}
+
+#menu {
+  background-color: var(--semiWhite);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.9375rem 1.875rem;
+  width: vw;
+  align-items: center;
+}
+
+#containerLeftNavBar,
+#containerRightNavBar {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+#containerLeftNavBar {
+  align-items: center;
+}
+
+#containerLeftNavBar #siteTitle {
+  font-family: "Quicksand";
+  font-weight: 700;
+  font-size: 25px;
+  user-select: none;
+}
+
+#containerLeftNavBar #styleSpanKFormat {
+  color: var(--darkYellow);
+}
+
+#menu .searchBar {
+  background-color: var(--darkGray);
+  border-radius: 1.875rem;
+  padding: 0.75rem 1.25rem;
+  width: auto;
+  align-items: center;
+}
+
+#menu .searchBar #iconSearch {
+  fill: var(--semiWhite);
+  width: 1.5rem;
+  height: 100%;
+  margin: -0.375rem 0rem;
+}
+
+#menu #searchBar {
+  background-color: transparent;
+  font-size: 16px;
+  font-family: "Nunito";
+  border: none;
+  color: var(--semiWhite);
+  height: 100%;
+  width: auto;
+}
+
+#menu #searchBar:focus {
+  outline: none;
+}
+
+#menu #buttonRegister {
+  background-color: var(--primaryYellow);
+  font-family: "Nunito";
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 12px 1.875rem;
+  color: #212121;
+  border-radius: 1.875rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 0 0.625rem;
+}
+
+#menu #buttonRegister:hover {
+  transform: scale(1.05);
+  background-color: var(--lightYellow);
+  font-weight: bold;
+}
+
+#menu #buttonAccount {
+  background-color: var(--primaryYellow);
+  border-radius: 100%;
+  border: none;
+  text-align: center;
+  height: 100%;
+  width: 3rem;
+}
+
+#menu #buttonAccount:hover {
+  transform: scale(1.05);
+  background-color: var(--lightYellow);
+}
+
+#menu #buttonAccount #iconAccount {
+  fill: var(--darkGray);
+  height: 100%;
+  width: 1.75rem;
+  margin: 0 auto;
+}
+
+#bannerContainer {
+  display: none;
+}
+
+#bannerContainer #banner {
+  background-image: linear-gradient(to right, #fdd835, #fddb36, #fff176);
+  box-shadow: 8px 4px 20px #d0d0d0;
+  border-radius: 30px;
+  text-align: center;
+  position: relative;
+  margin: 30px auto;
+  height: auto;
+  width: 90%;
+  padding: 30px;
+}
+
+#bannerContainer #banner #closeBanner {
+  background-color: var(--darkGray);
+  box-shadow: 0 2px 16px var(--lightYellow);
+  cursor: pointer;
+  align-items: center;
+  position: absolute;
+  border-radius: 30px;
+  max-height: 26px;
+  width: 26px;
+  padding: 2px;
+  transition: 0.2s;
+  right: -1px;
+  top: 1px;
+  opacity: 0.4;
+}
+
+#bannerContainer #banner #closeBanner:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+#bannerContainer #banner #closeBanner #iconClose {
+  fill: var(--semiWhite);
+  width: 22px;
+  height: 100%;
+}
+
+#bannerContainer #banner #titleBanner {
+  font-family: "Quicksand";
+  font-size: 2.625rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#bannerContainer #banner #descBanner {
+  font-family: "Quicksand";
+  font-size: 1.25rem;
+  font-weight: 500;
+  width: 50%;
+  margin: 0.9375rem auto;
+}
+
+#bannerContainer #banner #buttonBanner {
+  background-image: linear-gradient(to right, #111111, #212121);
+  box-shadow: 0 2px 16px var(--lightYellow);
+  font-family: "Nunito";
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 1.875rem;
+  border: none;
+  cursor: pointer;
+  padding: 12px 30px;
+  color: white;
+  transition: 0.2s;
+}
+
+#bannerContainer #banner #buttonBanner:hover {
+  background-color: var(--darkGray);
+}
+
+#bannersContainer {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  margin: 0 0 20px;
+}
+
+#bannersContainer .bannerService {
+  background-color: #111111;
+  box-shadow: 8px 4px 20px #d0d0d0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.875rem;
+  height: 220px;
+  width: 100%;
+  margin: 10px 5px;
+  padding: 30px 20px;
+}
+
+/* #bannersContainer .bannerService .imgBanner {
+    position: relative;
+    height: 100%;
+    max-width: 100%;
+} */
+
+#bannersContainer .bannerService .titleBannerService {
+  color: white;
+  font-family: "Quicksand";
+  font-weight: 500;
+  font-size: 1.375rem;
+}
+
+#bannersContainer .bannerService .descBannerService {
+  color: var(--pastelDarkGray);
+  font-family: "Nunito";
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+#bannersContainer .bannerService .buttonService {
+  background-color: var(--primaryYellow);
+  box-shadow: 0 2px 16px #212121;
+  font-family: "Nunito";
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--veryDarkGray);
+  border-radius: 30px;
+  border: none;
+  padding: 10px 0;
+  width: 200px;
+  transition: 0.2s;
+}
+
+#bannersContainer .bannerService .buttonService:hover {
+  transform: scale(1.05);
+  background-color: var(--lightYellow);
+}
+
+#container {
+  padding: 0 20px;
+}
+
+#container .presentationUnit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+#container .presentationUnit .titleSection {
+  font-family: "Quicksand";
+  font-weight: 700;
+  font-size: 28px;
+  margin: 0;
+}
+
+#container .presentationUnit .filterList {
+  background-color: var(--veryDarkGray);
+  border-radius: 30px;
+  width: auto;
+  padding: 0.3125rem 0.625rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: 0.2s;
+}
+
+#container .presentationUnit .filterList .filterTypeText {
+  font-family: "Nunito";
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  margin: 0 0.3125rem;
+}
+
+#container .presentationUnit .filterList #iconGrid,
+#iconExpandMore {
+  fill: white;
+  height: 100%;
+  max-width: 24px;
+}
+
+#container .presentationUnit .filterList #iconGrid {
+  height: 18px;
+}
+
+/* #container #nearbyUnitsSection .itemSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#container #nearbyUnitsSection .itemSection .containerItem {
+    background-color: #111111;
+    border-radius: 30px;
+    width: 500px;
+    height: 300px;
+    align-items: center;
+} */

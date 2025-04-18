@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/Site Icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>A-Kademy</title>
+    <meta
+      name="description"
+      content="The best service, made especially for you!"
+    />
+  </head>
+  <body>
+    <header id="menu">
+      <div id="containerLeftNavBar">
+        <span id="siteTitle" unselectable="on"
+          >A-<span id="styleSpanKFormat">K</span>ademy</span
+        >
+      </div>
+
+      <div id="containerRightNavBar">
+        <div class="searchBar">
+          <svg
+            id="iconSearch"
+            xmlns="http://www.w3.org/2000/svg"
+            height="48"
+            viewBox="0 96 960 960"
+            width="48"
+          >
+            <path
+              d="M774 913 533 672q-30 26-69.959 40.5T378 727q-108.162 0-183.081-75Q120 577 120 471t75-181q75-75 181.5-75t181 75Q632 365 632 471.15 632 514 618 554q-14 40-42 75l243 241q9 8.442 9 20.721t-9.913 22.192Q809 922 795.778 922q-13.222 0-.778-9ZM377 667q81.25 0 138.125-57.5T572 471q0-81-56.875-138.5T377 275q-82.083 0-139.542 57.5Q180 390 180 471t57.458 138.5Q294.917 667 377 667Z"
+            />
+          </svg>
+          <input
+            type="text"
+            placeholder="Search by address"
+            name="searchBarInput"
+            id="searchBar"
+          />
+        </div>
+        <a href="#">
+          <button id="buttonRegister">Register</button>
+        </a>
+        <a href="#">
+          <div id="buttonAccount">
+            <svg
+              id="iconAccount"
+              xmlns="http://www.w3.org/2000/svg"
+              height="48"
+              viewBox="0 96 960 960"
+              width="48"
+            >
+              <path
+                d="M226 790q62-42 123-64.5T480.435 703q70.435 0 132.419 23.268Q674.838 749.536 735 790q42-55 59-105.457Q811 634.086 811 576q0-140.247-95.326-235.623Q620.349 245 480.174 245 340 245 244.5 340.377 149 435.753 149 576q0 58 17.027 108.217T226 790Zm253.814-177q-60.971 0-101.893-41.186Q337 530.628 337 470.314T378.107 368.5Q419.215 327 480.186 327t101.893 41.686Q623 410.372 623 470.686T581.893 572q-41.108 41-102.079 41Zm.071 388q-86.885 0-164.273-33.291-77.388-33.292-135.696-91.576-58.307-58.285-91.612-135.492Q55 663.434 55 575.651 55 489 88.5 411.5 122 334 180 276t135.255-92q77.256-34 165.094-34Q567 150 644.5 184 722 218 780 276t92 135.615q34 77.616 34 164.5Q906 663 872 740.5 838 818 780 876t-135.615 91.5q-77.616 33.5-164.5 33.5Zm.115-94q52 0 99.5-14t98.5-51q-52-35-99-51.5T480 774q-52 0-98.5 16.5T283 842q51 37 98 51t99 14Zm0-366q30.867 0 50.933-19.5Q551 502 551 470.5T530.933 419Q510.867 399 480 399t-50.933 20Q409 439 409 470.5t20.067 51Q449.133 541 480 541Zm0-71Zm1 371Z"
+              />
+            </svg>
+          </div>
+        </a>
+      </div>
+    </header>
+    <div id="bannerContainer">
+      <div id="banner">
+        <div id="closeBanner">
+          <svg
+            id="iconClose"
+            xmlns="http://www.w3.org/2000/svg"
+            height="48"
+            viewBox="0 96 960 960"
+            width="48"
+          >
+            <path
+              d="M480 618 270 828q-9 9-21 9t-21-9q-9-9-9-21t9-21l210-210-210-210q-9-9-9-21t9-21q9-9 21-9t21 9l210 210 210-210q9-9 21-9t21 9q9 9 9 21t-9 21L522 576l210 210q9 9 9 21t-9 21q-9 9-21 9t-21-9L480 618Z"
+            />
+          </svg>
+        </div>
+        <h1 tabindex="1" id="titleBanner">
+          The best service made especially for you
+        </h1>
+        <p tabindex="2" id="descBanner">
+          Sign up for one of our plans now&comma; and let us guide
+          you&lpar;to&rpar; its best version, later this year&period;
+        </p>
+        <button id="buttonBanner">Find out more about our plans</button>
+      </div>
+    </div>
+    <div id="bannersContainer">
+      <div class="bannerService" id="bannerServiceHome">
+        <!-- <img class="imgBanner"
+          src="images/Banner Service Home (BSH).jpg"
+          alt="imgWomanExercice"
+        /> -->
+        <h2 tabindex="3" class="titleBannerService">
+          Prefer to train from the comfort of your home&quest; We have the
+          solution&excl;
+        </h2>
+        <p tabindex="4" class="descBannerService">
+          Hire one of our trainers and start exercising without leaving
+          home&period; At a great price and without risk&excl;
+        </p>
+        <button class="buttonService">Hiring services</button>
+      </div>
+      <div class="bannerService" id="bannerServicePlans">
+        <!-- <img class="imgBanner"
+          src="images/Banner Service Plans (BSP).jpg"
+          alt="imgPayment"
+        /> -->
+        <h2 class="titleBannerService margin0Auto">
+          You want to pay a lot less&comma; but receive the same services&quest;
+        </h2>
+        <p class="descBannerService">
+          Check out this week's offers&comma; as well as our cheapest
+          plans&comma; and plans&comma; and do your workouts without worrying
+          about running out of money&period;
+        </p>
+        <div id="returnBanner&button">
+          <button class="buttonService">See plans</button>
+        </div>
+      </div>
+      <div class="bannerService" id="bannerComplement">
+        <!-- <img class="imgBanner" src="images/Banner Complement (BC).jpg" alt="img" /> -->
+        <h2 class="titleBannerService">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis!
+        </h2>
+        <p class="descBannerService">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+          ipsum suscipit modi perferendis! Debitis minima sunt porro
+          exercitationem nemo enim!
+        </p>
+        <button class="buttonService">Complement</button>
+      </div>
+    </div>
+    <main id="container">
+      <section id="nearbyUnitsSection">
+        <div class="presentationUnit">
+          <h1 class="titleSection">Branches near you</h1>
+          <div class="filterList">
+            <svg
+              id="iconGrid"
+              xmlns="http://www.w3.org/2000/svg"
+              height="48"
+              viewBox="0 96 960 960"
+              width="48"
+            >
+              <path
+                d="M140 976q-24 0-42-18t-18-42V236q0-24 18-42t42-18h680q24 0 42 18t18 42v680q0 24-18 42t-42 18H140Zm0-246v186h187V730H140Zm247 0v186h186V730H387Zm246 186h187V730H633v186ZM140 670h187V483H140v187Zm247 0h186V483H387v187Zm246 0h187V483H633v187ZM327 236H140v187h187V236Zm60 187h186V236H387v187Zm246 0h187V236H633v187Z"
+              />
+            </svg>
+            <span class="filterTypeText">Grid display</span>
+            <svg
+              id="iconExpandMore"
+              xmlns="http://www.w3.org/2000/svg"
+              height="48"
+              viewBox="0 96 960 960"
+              width="48"
+            >
+              <path
+                d="M480 699q-6 0-11-2t-10-7L261 492q-8-8-7.5-21.5T262 449q10-10 21.5-8.5T304 450l176 176 176-176q8-8 21.5-9t21.5 9q10 8 8.5 21t-9.5 22L501 690q-5 5-10 7t-11 2Z"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
